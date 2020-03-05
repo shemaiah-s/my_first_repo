@@ -1,0 +1,22 @@
+---
+title: "Practice Plotting and Github"
+author: "Shemaiah Sotrah"
+date: "3/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+```{r}
+ggplot(iris, aes(x = Species, y = Sepal.Length)) +
+  geom_boxplot(fill = "green") +
+  theme_classic() +
+  labs( y = "Sepal Length") -> plot1
+
+ggsave("practice_plot.png", plot1 )
+```
+
