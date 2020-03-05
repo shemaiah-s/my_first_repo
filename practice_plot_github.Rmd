@@ -13,7 +13,7 @@ library(tidyverse)
 
 ```{r}
 ggplot(iris, aes(x = Species, y = Sepal.Length)) +
-  geom_boxplot(fill = "green") +
+  geom_boxplot(fill = "red") +
   theme_classic() +
   labs( y = "Sepal Length") -> plot1
 
